@@ -8,6 +8,8 @@ Repo for my LeetCode solutions. Currently in the repo:
 * [Two Sum (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/easy-problems/two-sum.js): [**Runtime:** 56ms | **Memory:** 34.8MB](https://leetcode.com/submissions/detail/329245216/)
 
 ## Medium
+* [Clone a graph (JavaScript) (Partially works)](https://github.com/shuffyiosys/leet-code/blob/main/medium-problems/clone-graph.js)
+* [Longest Substring Without Repeating Characters (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/medium-problems/longest-substring-non-repeating.js): [**Runtime:** 92ms | **Memory**: 44.6MB](https://leetcode.com/submissions/detail/579160888/)
 * Three Sum 
 	* [Three Sum (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/medium-problems/three-sum-shrinking-window.js): [**Runtime:** 148ms | **Memory:** 49.2MB](https://leetcode.com/submissions/detail/533367813/) <br> This uses what I call the shrinking window algorithm, not sure if there's an actual name for it :)
 	* [Three Sum quadratic (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/medium-problems/three-sum-quadratic-optimized.js): [**Runtime:** 6404ms | **Memory:** 47.4MB](https://leetcode.com/submissions/detail/533314229/) <br> This uses the quadratic formula with optimizations
