@@ -26,3 +26,4 @@ Repo for my LeetCode solutions. Currently in the repo:
 ## Miscellanous Problems
 These don't have a LeetCode page (or I couldn't be bothered to find it), but something I wanted to tackle anyway
 * [Find best city block to live in (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/misc-problems/block-finder.js)
+* [Finding a path (greedy and Djikstra's) (JavaScript)](https://github.com/shuffyiosys/leet-code/blob/main/misc-problems/path-finder.js)
