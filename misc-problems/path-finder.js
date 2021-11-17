@@ -1,3 +1,5 @@
+///////////////////////////////////////////////////////////////////////////////
+// Priority queue item
 class QItem {
 	constructor(item, priority) {
 		this.item = item;
@@ -5,7 +7,8 @@ class QItem {
 	}
 }
 
-// Lower priority is given precedence
+///////////////////////////////////////////////////////////////////////////////
+// Priority queue implementation
 class PriorityQueue {
 	constructor() {
 		this.items = [];
@@ -70,6 +73,9 @@ class Edge {
 	}
 }
 
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of the greedy path finding algorithm
 function getLowestWeight(edges, graph) {
 	if (edges.length === 0) {
 		return '';
@@ -100,9 +106,8 @@ function greedyShortestPath(graph, start, dest) {
 	return path;
 }
 
-// Dijkstra's Shortest Path
-// Mark all nodes with an infinite distance
-// Use a priority queue to consider which nodes to check first
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of Dijkstra's Shortest Path
 function dijkstraPath(graph, start, dest) {
 	let queue = new PriorityQueue();
 	let paths = {};
@@ -158,7 +163,8 @@ function dijkstraPath(graph, start, dest) {
 	}
 }
 
-
+///////////////////////////////////////////////////////////////////////////////
+// Stuff to run the above
 // let graph = {
 // 	'a': [new Edge('b', 5), new Edge('c', 3), new Edge('e', 2)],
 // 	'b': [new Edge('d', 2)],
@@ -179,12 +185,13 @@ let graph = {
 	'e': [new Edge('g', 2), new Edge('k', 5)],
 	'f': [new Edge('d', 5), new Edge('h', 3)],
 	'g': [new Edge('e', 2), new Edge('h', 2)],
-	'h': [new Edge('b', 1), new Edge('f', 3), new Edge('g', 2)],
+	'h': [new Edge('b', 1), new Edge('f', 3), new Edge('g', 4)],
 	'i': [new Edge('j', 6), new Edge('k', 4), new Edge('l', 4)],
 	'j': [new Edge('i', 6), new Edge('k', 4), new Edge('l', 4)],
 	'k': [new Edge('e', 5), new Edge('i', 4), new Edge('j', 4)],
 	'l': [new Edge('c', 2), new Edge('i', 4), new Edge('j', 4)],
 };
-let start = 'a';
-let dest = '3';
+let start = 's';
+let dest = 'e';
+//greedyShortestPath(graph, start, dest); // This mutates the graph
 dijkstraPath(graph, start, dest);
